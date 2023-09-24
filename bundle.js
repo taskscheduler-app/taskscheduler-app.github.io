@@ -65,7 +65,7 @@
   }
 `,Be=De.div`
   overflow: hidden;
-`,Ve=De((({className:t,onClickCallback:n})=>e.createElement("div",{className:t,onClick:()=>n()},e.createElement("img",{src:"../public/icons/gear.svg"}))))`
+`,Ve=De((({className:t,onClickCallback:n})=>e.createElement("div",{className:t,onClick:()=>n()},e.createElement("img",{src:"/icons/gear.svg"}))))`
   vertical-align: middle;
   width: 20px;
 
@@ -88,7 +88,7 @@
       display: inline-block;
     }
   }
-`,We=(0,e.createContext)(null),Qe=({children:t})=>{const[n,r]=(0,e.useState)([]),[a,l]=(0,e.useState)(0),[o,i]=(0,e.useState)(0),u={tasks:n,setTasks:r,currentTaskProgressSeconds:a,setCurrentTaskProgressSeconds:l,completedTasksSeconds:o,setCompletedTasksSeconds:i};return e.createElement(We.Provider,{value:u},t)},qe=De((({className:t})=>{const{tasks:n,setTasks:r}=(0,e.useContext)(We),a=(0,e.useRef)(),l=(0,e.useRef)(),[o,i]=(0,e.useState)(""),[u,s]=(0,e.useState)(0),[c,f]=(0,e.useState)(!1);return e.createElement("div",{className:t},e.createElement("div",{className:"title",onClick:()=>{f((e=>(e?(a.current.style.height="0px",l.current.innerText="  [+]"):(a.current.style.height="120px",l.current.innerText="  [-]"),!e)))}},e.createElement("span",null,"Add Task ",e.createElement("img",{src:"../public/icons/gear.svg",ref:l}))),e.createElement("div",{className:"inner-container",ref:a},e.createElement("form",{onSubmit:e=>{e.preventDefault();const t=e.target[0].value,a=e.target[1].value.split(":"),l=60*(60*a[0]+Number(a[1])),o=Math.max(15,Math.min(l,100));r([...n,[t,l,o]])}},e.createElement("div",{className:"name-field"},e.createElement("label",null,"Name:"),e.createElement("input",{type:"text"})),e.createElement("div",{className:"duration-field"},e.createElement("label",null,"Duration:"),e.createElement("input",{type:"time",defaultValue:"00:00"}),e.createElement("span",null,"(hh:mm)")),e.createElement("div",{className:"button-container"},e.createElement("button",{type:"submit"},"Add Task")))))}))`
+`,We=(0,e.createContext)(null),Qe=({children:t})=>{const[n,r]=(0,e.useState)([]),[a,l]=(0,e.useState)(0),[o,i]=(0,e.useState)(0),u={tasks:n,setTasks:r,currentTaskProgressSeconds:a,setCurrentTaskProgressSeconds:l,completedTasksSeconds:o,setCompletedTasksSeconds:i};return e.createElement(We.Provider,{value:u},t)},qe=De((({className:t})=>{const{tasks:n,setTasks:r}=(0,e.useContext)(We),a=(0,e.useRef)(),l=(0,e.useRef)(),[o,i]=(0,e.useState)(""),[u,s]=(0,e.useState)(0),[c,f]=(0,e.useState)(!1);return e.createElement("div",{className:t},e.createElement("div",{className:"title",onClick:()=>{f((e=>(e?(a.current.style.height="0px",l.current.innerText="  [+]"):(a.current.style.height="120px",l.current.innerText="  [-]"),!e)))}},e.createElement("span",null,"Add Task ",e.createElement("img",{src:"/icons/gear.svg",ref:l}))),e.createElement("div",{className:"inner-container",ref:a},e.createElement("form",{onSubmit:e=>{e.preventDefault();const t=e.target[0].value,a=e.target[1].value.split(":"),l=60*(60*a[0]+Number(a[1])),o=Math.max(15,Math.min(l,100));r([...n,[t,l,o]])}},e.createElement("div",{className:"name-field"},e.createElement("label",null,"Name:"),e.createElement("input",{type:"text"})),e.createElement("div",{className:"duration-field"},e.createElement("label",null,"Duration:"),e.createElement("input",{type:"time",defaultValue:"00:00"}),e.createElement("span",null,"(hh:mm)")),e.createElement("div",{className:"button-container"},e.createElement("button",{type:"submit"},"Add Task")))))}))`
   border: 1px solid black; 
   padding: 0 10 10 10;
 

@@ -319,6 +319,8 @@
     }
   }
 `,tt=Re((({className:t,name:n,index:r,duration:a,height:l,isTimed:o,progress:i,backgroundColor:u,doneCallback:s})=>{const c=Math.floor(a/3600),f=Math.floor((a-3600*c)/60).toString().padStart(2,"0");return e.createElement("div",{className:t,style:{backgroundColor:u}},e.createElement("div",{className:"progress",style:{width:100*i+"%",height:l+"px"}}),e.createElement("div",{className:"inner-container"},e.createElement("div",{className:"name"},n),o&&e.createElement("div",{className:"duration"},c,":",f),!o&&e.createElement("div",{className:"button-container"},e.createElement("button",{onClick:()=>s(r)},"Done"))))}))`
+  position: relative;
+  z-index: 1;
   border: 1px solid grey;
   height: ${e=>e.height}px;
 

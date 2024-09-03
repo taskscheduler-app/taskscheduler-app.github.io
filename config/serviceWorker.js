@@ -1,5 +1,5 @@
 const CACHE_NAME = 'task-scheduler-cache-v1';
-const urlsToCache = ['/', '/index.html', '/bundle.js'];
+const urlsToCache = ['/', '/index.html', '/bundle.js', '/config/manifest.json', '/assets/logo.svg'];
 
 self.addEventListener('install', event => {
   event.waitUntil(
